@@ -8,7 +8,7 @@ const accounts = require("../data/accounts.json");
 
 class Abcwager {
     constructor() {
-        this.serviceName = "Abcwager";
+        this.serviceName = "Action";
         this.isReady = false;
         this.matches = {};
         this.allMatches = {};
@@ -17,7 +17,7 @@ class Abcwager {
         this.accounts = accounts[this.serviceName];
     }
     async getLeagues(sessinoId) {
-        let leagues = [];
+        let leagueList = [];
         try {
             const response = await fetch("https://wager.abcwagering.ag/wager/CreateSports.aspx?WT=0", {
                 "headers": {
@@ -25,34 +25,46 @@ class Abcwager {
                     "accept-language": "en-US,en;q=0.9",
                     "cache-control": "max-age=0",
                     "priority": "u=0, i",
-                    "sec-ch-ua": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"",
+                    "sec-ch-ua": "\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"",
                     "sec-ch-ua-mobile": "?0",
                     "sec-ch-ua-platform": "\"Windows\"",
                     "sec-fetch-dest": "document",
                     "sec-fetch-mode": "navigate",
                     "sec-fetch-site": "same-origin",
+                    "sec-fetch-user": "?1",
                     "upgrade-insecure-requests": "1",
-                    "cookie": `ASP.NET_SessionId=${sessinoId}; pl=; idSiteCookie=tagAgentURL=http://www.abcwagering.ag`,
+                    "cookie": `pl=; ASP.NET_SessionId=${sessinoId}; idSiteCookie=tagAgentURL=http://www.abcwagering.ag`,
                     "Referer": "https://wager.abcwagering.ag/DefaultLogin.aspx"
                 },
                 "body": null,
                 "method": "GET"
-            })
+            });
             const result = await response.text();
-            leagues = result.matchAll(/<a href="splitschedule\.aspx\?wt=0&amp;lg=(\d+)">(.+?)<\/a>/g);
-            leagues = Array.from(leagues).map(([_, id, name]) => ({ id, name }));
+            const dom = new JSDOM(result);
+            let blocks = Array.from(dom.window.document.querySelectorAll("div.leaguesblock") || []);
+
+            for (const block of blocks) {
+                const sport = block.querySelector("h3").textContent.trim();
+                const leagues = block.querySelectorAll("div.leagueevent");
+                for (const league of leagues) {
+                    const id = league.querySelector("input").getAttribute("value");
+                    let desc = league.textContent.trim();
+                    desc = desc.includes(sport) ? desc : `${sport} ${desc}`;
+                    leagueList.push({ id, sport, desc })
+                }
+            }
 
         } catch (error) {
             console.log(this.serviceName, error);
         }
-        return leagues;
+        return leagueList;
     }
     async getLeagueMatches(league, sessinoId) {
         try {
             let sport = league.sport;
-            const desc = `${league.SportType} - ${league.SportSubType} - ${league.PeriodDescription}`;
+            const desc = league.desc;
 
-            if (sport.includes("Soc")) sport = "SOC";
+            if (sport.includes("SOC")) sport = "SOC";
             else if (sport == "MMA") sport = "FIGHTING";
             else if (sport.includes("TENNIS")) sport = "TENNIS";
             else if (desc.includes("NFL")) sport = "NFL";
@@ -60,52 +72,64 @@ class Abcwager {
             else if (desc.includes("NBA")) sport = "NBA";
             else if (desc.includes("MLB")) sport = "MLB";
             else if (desc.includes("MiLB")) sport = "MiLB";
-            else if (desc.includes("NHL")) sport = "NHL";
+            else if (desc.includes("NHL") || desc.includes("NATIONAL HOCKEY LEAGUE")) sport = "NHL";
             else if (sport.replace(/\s+/g, "").includes("NCAAF")) sport = "CFB";
             else if (sport.replace(/\s+/g, "").includes("NCAAB")) sport = "CBB";
 
-            const response = await fetch("https://betwindycity.com/player-api/api/wager/schedules/S/0", {
+            const response = await fetch(`https://wager.abcwagering.ag/wager/splitschedule.aspx?wt=0&lg=${league.id}`, {
                 "headers": {
-                    "accept": "application/json, text/plain, */*",
+                    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
                     "accept-language": "en-US,en;q=0.9",
-                    "authorization": `Bearer ${token}`,
-                    "content-type": "application/json",
+                    "priority": "u=0, i",
                     "sec-ch-ua": "\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"",
                     "sec-ch-ua-mobile": "?0",
                     "sec-ch-ua-platform": "\"Windows\"",
-                    "sec-fetch-dest": "empty",
-                    "sec-fetch-mode": "cors",
+                    "sec-fetch-dest": "document",
+                    "sec-fetch-mode": "navigate",
                     "sec-fetch-site": "same-origin",
-                    "Referer": "https://betwindycity.com/v2/"
+                    "sec-fetch-user": "?1",
+                    "upgrade-insecure-requests": "1",
+                    "cookie": `pl=; ASP.NET_SessionId=${sessinoId}; idSiteCookie=tagAgentURL=http://www.abcwagering.ag`,
+                    "Referer": "https://wager.abcwagering.ag/wager/CreateSports.aspx?WT=0"
                 },
-                "body": JSON.stringify([{ "IdSport": league.IdSportType, "Period": league.PeriodNumber }]),
-                "method": "POST"
+                "body": null,
+                "method": "GET"
             });
 
-            const data = await response.json();
-            let games = data[0]?.sc?.schl.flatMap(v => v.g.map(w => w.ts));
+            const data = await response.text();
+            const dom = new JSDOM(data);
+            const document = dom.window.document;
+            let games = [...document.querySelectorAll("div.ScheduleGameEven"), ...document.querySelectorAll("div.ScheduleGameOver")];
             games = games.map(v => {
+                const team = v.querySelector("img[src^='/App_Themes/ThemeLogo/images/teams/']");
+                const content = team ? team.parentElement.textContent.replace(/[\t\n\r]/g, "").replace(/ +/g, " ").trim() : v.textContent.replace(/[\t\n\r]/g, "").replace(/ +/g, " ").trim();
+                const [team1, team2] = content.split(")").map(v => v.trim());
+
+                const sprd1 = v.querySelector('input[value^="0_"]');
+                const sprd2 = v.querySelector('input[value^="1_"]');
+                const to = v.querySelector('input[value^="2_"]');
+                const tu = v.querySelector('input[value^="3_"]');
+                const ml1 = v.querySelector('input[value^="4_"]');
+                const ml2 = team2 ? v.querySelector('input[value^="5_"]') : v.querySelector('input');
+                const draw = v.querySelector('input[value^="6_"]');
+
                 return {
-                    team1: v[0].n,
-                    team2: v[1].n,
-                    sprd1: v[0].ls.s[0]?.i || null,
-                    sprd2: v[1].ls.s[0]?.i || null,
-                    to: v[0].ls.t[0]?.i || null,
-                    tu: v[1].ls.t[0]?.i || null,
-                    ml1: v[0].ls.m[0]?.i || null,
-                    ml2: v[1].ls.m[0]?.i || null,
-                    draw: v[0].ls.s[3]?.i || null,
-                    tto1: v[0].ls.to[0]?.i || null,
-                    ttu1: v[0].ls.tu[0]?.i || null,
-                    tto2: v[1].ls.to[0]?.i || null,
-                    ttu2: v[1].ls.tu[0]?.i || null,
+                    team1: team2 ? team1.split("(")[0] : "",
+                    team2: team2 ? team2.split("(")[0] : team1.split("(")[0],
+                    sprd1: sprd1 ? sprd1.value : null,
+                    sprd2: sprd2 ? sprd2.value : null,
+                    to: to ? to.value : null,
+                    tu: tu ? tu.value : null,
+                    ml1: ml1 ? ml1.value : null,
+                    ml2: ml2 ? ml2.value : null,
+                    draw: draw ? draw.value : null,
                 }
             });
 
             console.log(prettyLog(this.serviceName, this.aiRequests, sport, desc, games.length));
 
             for (const gm of games) {
-                const base = { sport: "NFL", desc: "NFL", idlg: 1 };
+                const base = { sport, desc, idlg: league.id };
 
                 if (gm.sprd1) {
                     const points = Number(gm.sprd1.split("_")[2]);
@@ -161,7 +185,7 @@ class Abcwager {
                 }
             }
 
-            fs.writeFileSync("matches/betwindycity_all.json", JSON.stringify(this.allMatches, null, 2));
+            fs.writeFileSync("matches/abcwager_all.json", JSON.stringify(this.allMatches, null, 2));
 
             if (desc.includes("PROP") || desc.includes("Score")) return true;
             if (!["NBA", "WNBA", "CBB", "NFL", "CFB", "SOC", "MLB", "MiLB", "NHL", "FIGHTING", "TENNIS"].includes(sport)) return true;
@@ -212,7 +236,7 @@ class Abcwager {
                     }
                 }
             }
-            fs.writeFileSync("matches/betwindycity.json", JSON.stringify(this.matches, null, 2));
+            fs.writeFileSync("matches/abcwager.json", JSON.stringify(this.matches, null, 2));
 
             if (unNormalizedTeams.length > 0) {
                 this.aiRequests++;
@@ -227,7 +251,32 @@ class Abcwager {
     }
     async userLogin(account) {
         try {
-            const response = await fetch("https://wager.abcwagering.ag/login.aspx", {
+            const response = await fetch("https://wager.abcwagering.ag/DefaultLogin.aspx", {
+                "headers": {
+                    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                    "accept-language": "en-US,en;q=0.9",
+                    "cache-control": "max-age=0",
+                    "content-type": "application/x-www-form-urlencoded",
+                    "priority": "u=0, i",
+                    "sec-ch-ua": "\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "sec-fetch-dest": "document",
+                    "sec-fetch-mode": "navigate",
+                    "sec-fetch-site": "same-site",
+                    "sec-fetch-user": "?1",
+                    "upgrade-insecure-requests": "1",
+                    "cookie": "pl=; ASP.NET_SessionId=; idSiteCookie=tagAgentURL=http://www.abcwagering.ag",
+                    "Referer": "https://www.abcwagering.ag/"
+                },
+                "body": `siteID=11&errorURL=%2F%2Fwww.abcwagering.ag%2F%3Flogin-error&account=${account.username}&password=${account.password}`,
+                "method": "POST"
+            });
+            const cookie = response.headers.get('set-cookie');
+            const sessionId = cookie.match(/ASP\.NET_SessionId=([^;]+)/)[1];
+            account.sessionId = sessionId;
+
+            await fetch("https://wager.abcwagering.ag/login.aspx", {
                 "headers": {
                     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
                     "accept-language": "en-US,en;q=0.9",
@@ -241,17 +290,13 @@ class Abcwager {
                     "sec-fetch-mode": "navigate",
                     "sec-fetch-site": "same-origin",
                     "upgrade-insecure-requests": "1",
-                    "cookie": "pl=; idSiteCookie=tagAgentURL=http://www.abcwagering.ag",
+                    "cookie": `pl=; ASP.NET_SessionId=${sessionId}; idSiteCookie=tagAgentURL=http://www.abcwagering.ag`,
                     "Referer": "https://wager.abcwagering.ag/DefaultLogin.aspx"
                 },
-                "body": "Account=Qr3834&Password=TEST&IdBook=6&Redir=&ErrorURL=%2F%2Fwww.abcwagering.ag%2F%3Flogin-error&SiteID=11",
-                "method": "POST"
+                "body": `Account=${account.username}&Password=${account.password}&IdBook=6&Redir=&ErrorURL=%2F%2Fwww.abcwagering.ag%2F%3Flogin-error&SiteID=11`,
+                "method": "POST",
+                "redirect": "manual"
             });
-            console.log(await response.text());
-
-            const cookie = response.headers.get('set-cookie');
-            console.log(cookie);
-            account.sessionId = cookie.match(/ASP\.NET_SessionId=([^;]+)/)[1];
 
         } catch (error) {
             console.log(this.serviceName, error);
@@ -259,77 +304,79 @@ class Abcwager {
 
         return account;
     }
-    async saveBet(token, selection, stake) {
-        const body = {
-            "CaptchaMessage": null,
-            "DelayKey": "",
-            "DelaySeconds": 0,
-            "Details": [
-                {
-                    "BetType": "S",
-                    "TotalPicks": 1,
-                    "IdTeaser": 0,
-                    "IsFreePlay": false,
-                    "Amount": stake,
-                    "RoundRobinOptions": [],
-                    "Wagers": [
-                        {
-                            "Id": selection,
-                            "PitcherVisitor": false,
-                            "PitcherHome": false
-                        }
-                    ],
-                    "AmountCalculation": "A",
-                    "ContinueOnPush": true,
-                    "PropParlay": false
-                }
-            ],
-            "PasswordConfirmation": null
-        };
+    async getViewState(account, leagueID, selection) {
+        let viewState = null;
+        let viewStateGenerator = null;
+        let eventValidation = null;
 
-        const response = await fetch("https://betwindycity.com/player-api/api/wager/SaveBet/", {
-            "headers": {
-                "accept": "application/json, text/plain, */*",
-                "accept-language": "en-US,en;q=0.9",
-                "authorization": `Bearer ${token}`,
-                "content-type": "application/json",
-                "sec-ch-ua": "\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"",
-                "sec-ch-ua-mobile": "?0",
-                "sec-ch-ua-platform": "\"Windows\"",
-                "sec-fetch-dest": "empty",
-                "sec-fetch-mode": "cors",
-                "sec-fetch-site": "same-origin",
-                "Referer": "https://betwindycity.com/v2/"
-            },
-            "body": JSON.stringify(body),
-            "method": "POST"
-        });
-        const data = await response.json();
-        return data.TicketNumber;
+        try {
+            const response = await fetch(`https://wager.abcwagering.ag/wager/CreateWager.aspx?lg=${leagueID}&wt=0&sel=${selection}`, {
+                "headers": {
+                    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                    "accept-language": "en-US,en;q=0.9",
+                    "cache-control": "max-age=0",
+                    "priority": "u=0, i",
+                    "sec-ch-ua": "\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "sec-fetch-dest": "document",
+                    "sec-fetch-mode": "navigate",
+                    "sec-fetch-site": "same-origin",
+                    "sec-fetch-user": "?1",
+                    "upgrade-insecure-requests": "1",
+                    "cookie": `pl=; ASP.NET_SessionId=${account.sessionId}; idSiteCookie=tagAgentURL=http://www.abcwagering.ag`,
+                    "Referer": `https://wager.abcwagering.ag/wager/splitschedule.aspx?wt=0&lg=${leagueID}`
+                },
+                "body": null,
+                "method": "GET"
+            });
+            const data = await response.text();
+            viewState = data.match(/name="__VIEWSTATE".*?value="([^"]+)"/)[1];
+            viewStateGenerator = data.match(/name="__VIEWSTATEGENERATOR".*?value="([^"]+)"/)[1];
+            eventValidation = data.match(/name="__EVENTVALIDATION".*?value="([^"]+)"/)[1];
+
+        } catch (error) {
+            console.log(this.serviceName, error);
+        }
+        return { viewState, viewStateGenerator, eventValidation };
     }
-    async confirmBet(token, ticketNumber) {
-        const response = await fetch("https://betwindycity.com/player-api/api/wager/confirmBet/", {
-            "headers": {
-                "accept": "application/json, text/plain, */*",
-                "accept-language": "en-US,en;q=0.9",
-                "authorization": `Bearer ${token}`,
-                "content-type": "application/json",
-                "sec-ch-ua": "\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"",
-                "sec-ch-ua-mobile": "?0",
-                "sec-ch-ua-platform": "\"Windows\"",
-                "sec-fetch-dest": "empty",
-                "sec-fetch-mode": "cors",
-                "sec-fetch-site": "same-origin",
-                "Referer": "https://betwindycity.com/v2/"
-            },
-            "body": `{\"TicketNumber\":${ticketNumber}}`,
-            "method": "POST"
-        });
-        const data = await response.json();
-        return data;
+    async createWager(account, leagueID, selection, stake) {
+        let { viewState, viewStateGenerator, eventValidation } = await this.getViewState(account, leagueID, selection);
+
+        try {
+            const response = await fetch("https://wager.abcwagering.ag/wager/CreateWager.aspx?lg=1&sel=0_18667355_9.5_-115&wt=0", {
+                "headers": {
+                    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                    "accept-language": "en-US,en;q=0.9",
+                    "cache-control": "max-age=0",
+                    "content-type": "application/x-www-form-urlencoded",
+                    "priority": "u=0, i",
+                    "sec-ch-ua": "\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "sec-fetch-dest": "document",
+                    "sec-fetch-mode": "navigate",
+                    "sec-fetch-site": "same-origin",
+                    "sec-fetch-user": "?1",
+                    "upgrade-insecure-requests": "1",
+                    "cookie": "pl=; ASP.NET_SessionId=xcsxyw45r4hcws554py4cgy3; idSiteCookie=tagAgentURL=http://www.abcwagering.ag",
+                    "Referer": "https://wager.abcwagering.ag/wager/CreateWager.aspx?lg=1&wt=0&sel=0_18667355_9.5_-115"
+                },
+                "body": `__EVENTTARGET=&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=${encodeURIComponent(viewState)}&__VIEWSTATEGENERATOR=${encodeURIComponent(viewStateGenerator)}&__EVENTVALIDATION=${encodeURIComponent(eventValidation)}&BUY_${selection.split("_")[1]}_0=0&ctl00%24WagerContent%24chkPostBack=on&UseSameAmount=0&WAMT_=${stake}&ctl00%24WagerContent%24btn_Continue1=Continue&RISKWIN=0`,
+                "method": "POST"
+            });
+            const data = await response.text();
+            viewState = data.match(/name="__VIEWSTATE".*?value="([^"]+)"/)[1];
+            viewStateGenerator = data.match(/name="__VIEWSTATEGENERATOR".*?value="([^"]+)"/)[1];
+            eventValidation = data.match(/name="__EVENTVALIDATION".*?value="([^"]+)"/)[1];
+        }
+        catch (error) {
+            console.log(this.serviceName, error);
+        }
+        return { viewState, viewStateGenerator, eventValidation };
     }
     async placebet(account, betslip, inputPoints, inputOdds, stake) {
-        if (account.token == null) return { service: this.serviceName, account, msg: "Token expired" };
+        if (account.sessionId == null) return { service: this.serviceName, account, msg: "Session expired" };
 
         const pointsTolerance = tolerances.Points[betslip.sport] || 0;
         const oddsTolerance = tolerances.Cents[betslip.sport] || 10;
@@ -337,11 +384,49 @@ class Abcwager {
         const selection = [...betslip.sel.split("_").slice(0, 2), inputPoints, inputOdds].join("_");
         const idmk = Number(selection[0]);
 
-        const ticketNumber = await this.saveBet(account.token, selection, stake);
-        const result = await this.confirmBet(account.token, ticketNumber);
-        if (result.StatusDescription == "ACCEPTED") return { service: this.serviceName, account, msg: "Success" };
-        return { service: this.serviceName, account, msg: result.StatusDescription };
+        const { viewState, viewStateGenerator, eventValidation } = await this.createWager(account, betslip.idlg, betslip.sel, stake);
 
+        try {
+            const response = await fetch("https://wager.abcwagering.ag/wager/ConfirmWager.aspx?WT=0", {
+                "headers": {
+                    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                    "accept-language": "en-US,en;q=0.9",
+                    "cache-control": "max-age=0",
+                    "content-type": "application/x-www-form-urlencoded",
+                    "priority": "u=0, i",
+                    "sec-ch-ua": "\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "sec-fetch-dest": "document",
+                    "sec-fetch-mode": "navigate",
+                    "sec-fetch-site": "same-origin",
+                    "sec-fetch-user": "?1",
+                    "upgrade-insecure-requests": "1",
+                    "cookie": `pl=; ASP.NET_SessionId=${account.sessionId}; idSiteCookie=tagAgentURL=http://www.abcwagering.ag`,
+                    "Referer": `https://wager.abcwagering.ag/wager/CreateWager.aspx?lg=${betslip.idlg}&sel=${betslip.sel}`
+                },
+                "body": `__EVENTTARGET=&__EVENTARGUMENT=&__VIEWSTATE=${encodeURIComponent(viewState)}&__VIEWSTATEGENERATOR=${encodeURIComponent(viewStateGenerator)}&__EVENTVALIDATION=${encodeURIComponent(eventValidation)}&password=${account.password}&RMV_0=&ctl00%24WagerContent%24btn_Continue1=Continue`,
+                "method": "POST"
+            });
+            const data = await response.text();
+            const lineChange = data.match(/LineChange text-danger">([^<]+)</)?.[1]?.replace("&frac12;", ".5").replace("&frac14;", ".25").replace("&frac34;", ".75").trim();
+            if (lineChange) {
+                const bookPoints = String(Number(lineChange.match(/^[+-]?[0-9.]+/)));
+                const bookOdds = String(Number(lineChange.match(/[+-]?[0-9.]+$/)));
+                if (!checkTolerance(bookPoints, bookOdds, inputPoints, inputOdds, pointsTolerance, oddsTolerance, idmk == 2 || idmk == 3 ? "total" : "")) {
+                    return { service: this.serviceName, account, msg: `Game line change. ${inputPoints}/${inputOdds} ➝ ${bookPoints}/${bookOdds}` };
+                }
+                return await this.placebet(account, { ...betslip, sel: [...selection.split("_").slice(0, 2), bookPoints, bookOdds].join("_") }, bookPoints, bookOdds, stake)
+            }
+            else {
+                let msg = "Success";
+                if (data.includes("The Following Error Occurred")) msg = "Error occurred";
+                return { service: this.serviceName, account, msg };
+            }
+        }
+        catch (error) {
+            return { service: this.serviceName, account, msg: error.message };
+        }
     }
     async place(betTeamName, period, marketName, inputPoints, inputOdds, stake) {
         const betslip = this.matches[betTeamName][period][marketName];
@@ -376,10 +461,9 @@ class Abcwager {
             }
 
             for (const league of leagues) {
-                console.log(league);
-                // const result = await this.getLeagueMatches(league, account.sessionId);
-                // if (!result) account = await this.userLogin(account);
-                // await new Promise(resolve => setTimeout(resolve, 1000));
+                const result = await this.getLeagueMatches(league, account.sessionId);
+                if (!result) account = await this.userLogin(account);
+                await new Promise(resolve => setTimeout(resolve, 1000));
             }
 
             this.isReady = true;

@@ -129,7 +129,7 @@ class Betwindycity {
             console.log(prettyLog(this.serviceName, this.aiRequests, sport, desc, games.length));
 
             for (const gm of games) {
-                const base = { sport: "NFL", desc: "NFL", idlg: 1 };
+                const base = { sport, desc, idlg: league.id };
 
                 if (gm.sprd1) {
                     const points = Number(gm.sprd1.split("_")[2]);

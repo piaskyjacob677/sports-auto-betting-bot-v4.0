@@ -41,15 +41,16 @@ class Fesster {
 
             const result = await response.text();
             const dom = new JSDOM(result);
-            let sports = Array.from(dom.window.document.querySelectorAll("div.welcome") || []);
+            let blocks = Array.from(dom.window.document.querySelectorAll("div.welcome") || []);
 
-            for (const sport of sports) {
-                const sportName = sport.querySelector("div.card-header").textContent.replace(/\n|\s+/g, " ").replace("  ", " ").trim();
-                const leagues = sport.querySelectorAll("label");
+            for (const block of blocks) {
+                const sport = block.querySelector("div.card-header").textContent.replace(/\n|\s+/g, " ").replace("  ", " ").trim();
+                const leagues = block.querySelectorAll("label");
                 for (const league of leagues) {
                     const id = league.querySelector("input").getAttribute("value");
-                    const name = league.textContent.replace(/\n|\s+/g, " ").replace("  ", " ").trim();
-                    leagueList.push({ id, sport: sportName, name })
+                    let desc = league.textContent.replace(/\n|\s+/g, " ").replace("  ", " ").trim();
+                    desc = desc.includes(sport) ? desc : `${sport} ${desc}`;
+                    leagueList.push({ id, sport, desc })
                 }
             }
 
@@ -61,7 +62,7 @@ class Fesster {
     async getLeagueMatches(league, sessionId) {
         try {
             let sport = league.sport;
-            const desc = league.name.includes(sport) ? league.name : `${league.sport} ${league.name}`;
+            const desc = league.desc;
 
             if (sport.includes("SOC")) sport = "SOC";
             else if (sport.includes("TENNIS")) sport = "TENNIS";
@@ -70,7 +71,7 @@ class Fesster {
             else if (desc.includes("NBA")) sport = "NBA";
             else if (desc.includes("MLB")) sport = "MLB";
             else if (desc.includes("MiLB")) sport = "MiLB";
-            else if (desc.includes("NHL")) sport = "NHL";
+            else if (desc.includes("NHL") || desc.includes("NATIONAL HOCKEY LEAGUE")) sport = "NHL";
             else if (desc.replace(/\s+/g, "").includes("NCAAF")) sport = "CFB";
             else if (desc.replace(/\s+/g, "").includes("NCAAB")) sport = "CBB";
 
