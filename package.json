@@ -1,0 +1,35 @@
+{
+  "name": "sports-auto-betting-bot",
+  "version": "1.0.0",
+  "description": "Sports betting automation bot with Telegram integration",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dot-env": "^0.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^5.1.0",
+    "jsdom": "^27.0.1",
+    "mongoose": "^8.19.2",
+    "morgan": "^1.10.1",
+    "node-fetch": "^2.7.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "openai": "^5.20.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "sports",
+    "betting",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT"
+}

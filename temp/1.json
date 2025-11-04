@@ -1,0 +1,26 @@
+{
+    "CaptchaMessage": null,
+    "DelayKey": "",
+    "DelaySeconds": 0,
+    "Details": [
+        {
+            "BetType": "S",
+            "TotalPicks": 1,
+            "IdTeaser": 0,
+            "IsFreePlay": false,
+            "Amount": 25,
+            "RoundRobinOptions": [],
+            "Wagers": [
+                {
+                    "Id": "2_579894668_0_-155_0_0_0",
+                    "PitcherVisitor": false,
+                    "PitcherHome": false
+                }
+            ],
+            "AmountCalculation": "A",
+            "ContinueOnPush": true,
+            "PropParlay": false
+        }
+    ],
+    "PasswordConfirmation": null
+}

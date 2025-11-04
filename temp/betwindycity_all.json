@@ -1,0 +1,106 @@
+{
+  "Los Angeles Dodgers -2.5 +190": {
+    "sport": "NFL",
+    "desc": "NFL",
+    "idlg": 1,
+    "sel": "0_580148224_-2.5_190_0_0_0",
+    "points": -2.5,
+    "odds": 190
+  },
+  "Toronto Blue Jays -1.5 +235": {
+    "sport": "NFL",
+    "desc": "NFL",
+    "idlg": 1,
+    "sel": "1_580148221_-1.5_235_0_0_0",
+    "points": -1.5,
+    "odds": 235
+  },
+  "Los Angeles Dodgers -134": {
+    "sport": "NFL",
+    "desc": "NFL",
+    "idlg": 1,
+    "sel": "2_580148219_0_-134_0_0_0",
+    "points": 0,
+    "odds": -134
+  },
+  "Toronto Blue Jays +121": {
+    "sport": "NFL",
+    "desc": "NFL",
+    "idlg": 1,
+    "sel": "3_580148219_0_121_0_0_0",
+    "points": 0,
+    "odds": 121
+  },
+  "Los Angeles Dodgers vrs Toronto Blue Jays Draw -295": {
+    "sport": "NFL",
+    "desc": "NFL",
+    "idlg": 1,
+    "sel": "0_580148221_1.5_-295_0_0_0",
+    "points": 0,
+    "odds": -295
+  },
+  "Los Angeles Dodgers vrs Toronto Blue Jays o-7.5 +100": {
+    "sport": "NFL",
+    "desc": "NFL",
+    "idlg": 1,
+    "sel": "4_580148219_7.5_100_0_0_0",
+    "points": 7.5,
+    "odds": 100
+  },
+  "Los Angeles Dodgers vrs Toronto Blue Jays u7.5 -120": {
+    "sport": "NFL",
+    "desc": "NFL",
+    "idlg": 1,
+    "sel": "5_580148219_7.5_-120_0_0_0",
+    "points": 7.5,
+    "odds": -120
+  },
+  "Los Angeles Dodgers Team totals o-3.5 -145": {
+    "sport": "NFL",
+    "desc": "NFL",
+    "idlg": 1,
+    "sel": "6_580148219_3.5_-145_0_0_0",
+    "points": 3.5,
+    "odds": -145
+  },
+  "Los Angeles Dodgers Team totals u3.5 +120": {
+    "sport": "NFL",
+    "desc": "NFL",
+    "idlg": 1,
+    "sel": "8_580148219_3.5_120_0_0_0",
+    "points": 3.5,
+    "odds": 120
+  },
+  "Toronto Blue Jays Team totals o-3.5 +112": {
+    "sport": "NFL",
+    "desc": "NFL",
+    "idlg": 1,
+    "sel": "7_580148219_3.5_112_0_0_0",
+    "points": 3.5,
+    "odds": 112
+  },
+  "Toronto Blue Jays Team totals u3.5 -135": {
+    "sport": "NFL",
+    "desc": "NFL",
+    "idlg": 1,
+    "sel": "9_580148219_3.5_-135_0_0_0",
+    "points": 3.5,
+    "odds": -135
+  },
+  "Dodgers - Series +185": {
+    "sport": "NFL",
+    "desc": "NFL",
+    "idlg": 1,
+    "sel": "2_579113980_0_185_0_0_0",
+    "points": 0,
+    "odds": 185
+  },
+  "Blue Jays - Series -230": {
+    "sport": "NFL",
+    "desc": "NFL",
+    "idlg": 1,
+    "sel": "3_579113980_0_-230_0_0_0",
+    "points": 0,
+    "odds": -230
+  }
+}

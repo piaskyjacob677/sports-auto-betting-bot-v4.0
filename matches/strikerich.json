@@ -1,0 +1,2425 @@
+{
+  "baltimore ravens": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867246,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -7.5,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867246,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": -450
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867246,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -51,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867246,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 51,
+        "odds": -110
+      },
+      "tto": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867246,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -28.5,
+        "odds": -140
+      },
+      "ttu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867246,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 28.5,
+        "odds": 110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867246,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -4.5,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867246,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "M",
+        "points": 0,
+        "odds": -255
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867246,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -25.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867246,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 25.5,
+        "odds": -110
+      },
+      "tto": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867246,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -14.5,
+        "odds": -115
+      },
+      "ttu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867246,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 14.5,
+        "odds": -115
+      }
+    }
+  },
+  "miami dolphins": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867246,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -7.5,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867246,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": 340
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867246,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -51,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867246,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 51,
+        "odds": -110
+      },
+      "tto": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867246,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -20.5,
+        "odds": -120
+      },
+      "ttu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867246,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 20.5,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867246,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -4.5,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867246,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "M",
+        "points": 0,
+        "odds": 210
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867246,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -25.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867246,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 25.5,
+        "odds": -110
+      },
+      "tto": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867246,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -10,
+        "odds": -125
+      },
+      "ttu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867246,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 10,
+        "odds": -105
+      }
+    }
+  },
+  "chicago bears": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867247,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -3,
+        "odds": 100
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867247,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": -150
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867247,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -51,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867247,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 51,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867247,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -1,
+        "odds": -110
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867247,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -25.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867247,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 25.5,
+        "odds": -110
+      }
+    }
+  },
+  "cincinnati bengals": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867247,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -3,
+        "odds": -120
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867247,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": 130
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867247,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -51,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867247,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 51,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867247,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -1,
+        "odds": -110
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867247,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -25.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867247,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 25.5,
+        "odds": -110
+      }
+    }
+  },
+  "san francisco 49ers": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867248,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -2.5,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867248,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": -150
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867248,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -48.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867248,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 48.5,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867248,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -1,
+        "odds": -110
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867248,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -24,
+        "odds": -115
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867248,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 24,
+        "odds": -105
+      }
+    }
+  },
+  "new york giants": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867248,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -2.5,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867248,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": 130
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867248,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -48.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867248,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 48.5,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867248,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -1,
+        "odds": -110
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867248,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -24,
+        "odds": -115
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867248,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 24,
+        "odds": -105
+      }
+    }
+  },
+  "atlanta falcons": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867249,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -5.5,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867249,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": 205
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867249,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -45,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867249,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 45,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867249,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -3,
+        "odds": -110
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867249,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -22.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867249,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 22.5,
+        "odds": -110
+      }
+    }
+  },
+  "new england patriots": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867249,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -5.5,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867249,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": -245
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867249,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -45,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867249,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 45,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867249,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -3,
+        "odds": -110
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867249,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -22.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867249,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 22.5,
+        "odds": -110
+      }
+    }
+  },
+  "indianapolis colts": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867250,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -3,
+        "odds": -120
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867250,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": -165
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867250,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -50.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867250,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 50.5,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867250,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -2.5,
+        "odds": -115
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867250,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -24.5,
+        "odds": -115
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867250,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 24.5,
+        "odds": -105
+      }
+    }
+  },
+  "pittsburgh steelers": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867250,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -3,
+        "odds": 100
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867250,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": 145
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867250,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -50.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867250,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 50.5,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867250,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -2.5,
+        "odds": -105
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867250,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -24.5,
+        "odds": -115
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867250,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 24.5,
+        "odds": -105
+      }
+    }
+  },
+  "carolina panthers": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867251,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -13,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867251,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": 625
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867251,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -44.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867251,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 44.5,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867251,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -7,
+        "odds": 100
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867251,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -23,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867251,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 23,
+        "odds": -110
+      }
+    }
+  },
+  "green bay packers": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867251,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -13,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867251,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": -950
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867251,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -44.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867251,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 44.5,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867251,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -7,
+        "odds": -120
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867251,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -23,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867251,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 23,
+        "odds": -110
+      }
+    }
+  },
+  "minnesota vikings": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867252,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -9,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867252,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": 350
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867252,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -48,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867252,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 48,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867252,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -6,
+        "odds": -110
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867252,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -24.5,
+        "odds": 100
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867252,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 24.5,
+        "odds": -120
+      }
+    }
+  },
+  "detroit lions": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867252,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -9,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867252,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": -500
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867252,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -48,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867252,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 48,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867252,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -6,
+        "odds": -110
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867252,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -24.5,
+        "odds": 100
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867252,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 24.5,
+        "odds": -120
+      }
+    }
+  },
+  "denver broncos": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867253,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -1.5,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867253,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": 105
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867253,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -40,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867253,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 40,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867253,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -0.5,
+        "odds": -125
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867253,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -19.5,
+        "odds": -120
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867253,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 19.5,
+        "odds": 100
+      }
+    }
+  },
+  "houston texans": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867253,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -1.5,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867253,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": -125
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867253,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -40,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867253,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 40,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867253,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -0.5,
+        "odds": 105
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867253,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -19.5,
+        "odds": -120
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867253,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 19.5,
+        "odds": 100
+      }
+    }
+  },
+  "los angeles chargers": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867254,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -9,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867254,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": -500
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867254,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -43.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867254,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 43.5,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867254,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -6,
+        "odds": -110
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867254,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -21.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867254,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 21.5,
+        "odds": -110
+      }
+    }
+  },
+  "tennessee titans": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867254,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -9,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867254,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": 350
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867254,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -43.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867254,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 43.5,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867254,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -6,
+        "odds": -110
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867254,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -21.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867254,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 21.5,
+        "odds": -110
+      }
+    }
+  },
+  "jacksonville jaguars": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867255,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -3,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867255,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": -150
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867255,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -44.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867255,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 44.5,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867255,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -1,
+        "odds": -110
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867255,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -22.5,
+        "odds": -115
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867255,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 22.5,
+        "odds": -105
+      }
+    }
+  },
+  "las vegas raiders": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867255,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -3,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867255,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": 130
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867255,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -44.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867255,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 44.5,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867255,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -1,
+        "odds": -110
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867255,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -22.5,
+        "odds": -115
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867255,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 22.5,
+        "odds": -105
+      }
+    }
+  },
+  "new orleans saints": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867256,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -14,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867256,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": 750
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867256,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -44,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867256,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 44,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867256,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -7.5,
+        "odds": -110
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867256,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -22.5,
+        "odds": -115
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867256,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 22.5,
+        "odds": -105
+      }
+    }
+  },
+  "los angeles rams": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867256,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -14,
+        "odds": -110
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867256,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -44,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867256,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 44,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867256,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -7.5,
+        "odds": -110
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867256,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -22.5,
+        "odds": -115
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867256,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 22.5,
+        "odds": -105
+      }
+    }
+  },
+  "kansas city chiefs": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867257,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -2,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867257,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": -130
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867257,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -52.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867257,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 52.5,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867257,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -0.5,
+        "odds": -105
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867257,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -26.5,
+        "odds": -115
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867257,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 26.5,
+        "odds": -105
+      }
+    }
+  },
+  "buffalo bills": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867257,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -2,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867257,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": 110
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867257,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -52.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867257,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 52.5,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867257,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -0.5,
+        "odds": -115
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867257,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -26.5,
+        "odds": -115
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867257,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 26.5,
+        "odds": -105
+      }
+    }
+  },
+  "seattle seahawks": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867259,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -3,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867259,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": -160
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867259,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -48,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867259,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 48,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867259,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -1.5,
+        "odds": -110
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867259,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -23.5,
+        "odds": -115
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867259,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 23.5,
+        "odds": -105
+      }
+    }
+  },
+  "washington commanders": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867259,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -3,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867259,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": 140
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867259,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -48,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867259,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 48,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867259,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -1.5,
+        "odds": -110
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867259,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -23.5,
+        "odds": -115
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867259,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 23.5,
+        "odds": -105
+      }
+    }
+  },
+  "arizona cardinals": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867260,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -2.5,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867260,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": 130
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867260,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -53.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867260,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 53.5,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867260,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -1,
+        "odds": -115
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867260,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -26.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867260,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 26.5,
+        "odds": -110
+      }
+    }
+  },
+  "dallas cowboys": {
+    "ft": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867260,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "S",
+        "points": -2.5,
+        "odds": -110
+      },
+      "ml": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867260,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "M",
+        "points": 0,
+        "odds": -150
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867260,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": -53.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - Game",
+        "gameNum": 618867260,
+        "periodNumber": 0,
+        "status": "O",
+        "periodType": "Game",
+        "wagerType": "L",
+        "points": 53.5,
+        "odds": -110
+      }
+    },
+    "1h": {
+      "sprd": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867260,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "S",
+        "points": -1,
+        "odds": -105
+      },
+      "to": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867260,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": -26.5,
+        "odds": -110
+      },
+      "tu": {
+        "sport": "NFL",
+        "desc": "FOOTBALL - NFL - 1st Half",
+        "gameNum": 618867260,
+        "periodNumber": 1,
+        "status": "O",
+        "periodType": "1st Half",
+        "wagerType": "L",
+        "points": 26.5,
+        "odds": -110
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="Experience the thrill of sports betting with ABCWAGERING. Bet on your favorite teams and players with our easy-to-use platform. Join now and get in on the action!">
+    <link rel="icon" href="favicon.ico">
+    <title>ABCWAGERING</title>
+    <script defer="defer" src="/js/chunk-vendors.3889d0c8.js"></script>
+    <script defer="defer" src="/js/app.8ef8e5e4.js"></script>
+    <link href="/css/app.3d929564.css" rel="stylesheet">
+</head>
+
+<body><noscript><strong>We're sorry but bundle-vue doesn't work properly without JavaScript enabled. Please enable it to
+            continue.</strong></noscript>
+    <div id="app"></div>
+    <script src="https://images.betimages.com/Betslip/js/quick.login.min.js"></script>
+</body>
+
+</html>

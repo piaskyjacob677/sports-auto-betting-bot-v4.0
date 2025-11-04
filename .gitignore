@@ -1,0 +1,10 @@
+.env
+node_modules
+data
+
+
+tolerances - Open Points & Cents tolerance menu
+stake_amounts - Open stake amounts matrix
+stake_choice - Choose stake choice
+confirm_toggle - Toggle confirmation mode on/off
+users - Show users
